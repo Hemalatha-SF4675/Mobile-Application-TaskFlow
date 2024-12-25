@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileAppSample.TasksPage"
+             Title="TasksPage">
+
+              <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                Priority="0"
+                Order="Primary"/>
+        <ToolbarItem Text="⇅"
+                Priority="1"
+                Order="Primary"/>
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout Spacing="5">
+        <Border  StrokeShape="RoundRectangle 20" HeightRequest="200" >
+        <HorizontalStackLayout Background="#F4CD64" >
+            <ProgressBar Rotation="180"  HeightRequest="150" WidthRequest="5" BackgroundColor="Red" Margin="20"/>
+            <Label Text="123"/>
+        </HorizontalStackLayout>
+        </Border> 
+
+        <Border  StrokeShape="RoundRectangle 20"  HeightRequest="95" >
+        <HorizontalStackLayout Background="#F4CD64" >
+            <ProgressBar Progress="10" Rotation="90" ProgressColor="#6138DE"/>
+            <Label Text="123"/>
+        </HorizontalStackLayout>
+        </Border> 
+        
+        <Border  StrokeShape="RoundRectangle 20"  HeightRequest="95" >
+        <HorizontalStackLayout Background="#F4CD64"  >
+            <ProgressBar Progress="10" Rotation="90" ProgressColor="Red"/>
+            <Label Text="123"/>
+        </HorizontalStackLayout>
+        </Border> 
+        <HorizontalStackLayout Spacing="5">
+            <Border StrokeShape="RoundRectangle 20"  HeightRequest="95" WidthRequest="200" >
+                <HorizontalStackLayout Background="#F4CD64" >
+                    <ProgressBar Progress="10" Rotation="90" ProgressColor="Green"/>
+                    <Label Text="123"/>
+                </HorizontalStackLayout>
+                </Border>
+                <Button Text="&#10006;" TextColor="White" FontSize="50"  CornerRadius="95" WidthRequest="95" HeightRequest="95" Background="#DD4901"/>
+                <Button  Text="&#10004;" TextColor="White" FontSize="50" CornerRadius="95" WidthRequest="95" HeightRequest="95" Background="#5CC397"/>
+        </HorizontalStackLayout>    
+        
+
+        <Border  StrokeShape="RoundRectangle 20"  HeightRequest="95" >
+        <HorizontalStackLayout Background="#F4CD64" >
+            <ProgressBar Progress="10" Rotation="90" ProgressColor="Blue"/>
+            <Label Text="123"/>
+        </HorizontalStackLayout>
+        </Border> 
+
+        <Border  StrokeShape="RoundRectangle 20"  HeightRequest="95" >
+        <HorizontalStackLayout Background="#F4CD64" >
+            <ProgressBar Progress="10" Rotation="90" ProgressColor="Red"/>
+            <Label Text="123"/>
+        </HorizontalStackLayout>
+        </Border> 
+
+        
+    </VerticalStackLayout>
+</ContentPage>
