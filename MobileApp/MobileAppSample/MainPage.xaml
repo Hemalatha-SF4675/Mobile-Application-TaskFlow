@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:core="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:inputs="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             x:Class="MobileAppSample.MainPage">
+
+<VerticalStackLayout >
+            <Grid RowSpacing="5" ColumnSpacing="5">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <HorizontalStackLayout Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4">
+                <Button BackgroundColor="Black" Text="&#10059;"  TextColor="White" FontSize="20" CornerRadius="25" HeightRequest="20" WidthRequest="20" />
+                <Label Text="TASK FLOW"  VerticalTextAlignment="Center" FontSize="20"/>
+                <core:SfAvatarView ImageSource="settings.jpg" CornerRadius="25" HeightRequest="20" WidthRequest="20" />
+                <core:SfAvatarView ImageSource="settings.jpg" CornerRadius="25" HeightRequest="20" WidthRequest="20" />
+                </HorizontalStackLayout>
+                <Label Text="DAILY WORK" FontSize="40" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"/>
+                <Label Text="PRIORTIES" FontSize="40" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"/>
+                <HorizontalStackLayout  Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="4" Spacing="10"> 
+                    <inputs:SfComboBox WidthRequest="280" Background="Black" Placeholder="UI/UX Designer" ShowBorder="False" IsClearButtonVisible="False" />
+                    <Button Text="+" Background="Black" TextColor="White"/>
+                    <Button Text="&#8593; &#8595;" Background="Black" TextColor="White"/>
+                </HorizontalStackLayout >
+                <Button  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Background="#F4CD64" Text="Tasks" Clicked="Button_Clicked"/>
+                 <Button Grid.Row="4" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="#CADE7F"  Text="Notes" Clicked="Button_Clicked1"/>
+                 <Button Background="#F4CD64" Text="Morning StandUp with Team" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                 <Button Grid.Row="6" Grid.Column="2" Background="#DD4901" Text="&#9993;" FontSize="25" TextColor="White" />
+                 <Button Grid.Row="6" Grid.Column="3" Background="#5CC397" />
+                 <Border  StrokeShape="RoundRectangle 20" Grid.Row="7" Grid.Column="0"  Grid.ColumnSpan="4" >
+                 <HorizontalStackLayout Background="Blue" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="4" >
+                 </HorizontalStackLayout>
+                 </Border> 
+            </Grid>
+            
+        </VerticalStackLayout>
+
+</ContentPage>
