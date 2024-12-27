@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:core="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:inputs="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             xmlns:local="clr-namespace:MobileAppSample.ViewModel"
              x:Class="MobileAppSample.Notes"
              Title="Notes">
     <ContentPage.ToolbarItems>
@@ -11,6 +14,10 @@
                 Priority="1"
                 Order="Primary"/>
     </ContentPage.ToolbarItems>
+
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
 
     <VerticalStackLayout>
 
@@ -28,40 +35,213 @@
             </Grid.ColumnDefinitions>
 
             <Border StrokeShape="RoundRectangle 20" Grid.Row="0" Grid.Column="0">
-                <HorizontalStackLayout Background="#684CF0">
-                </HorizontalStackLayout>
+                <VerticalStackLayout Spacing="40" Padding="10" Background="#684CF0" >
+                    <Label Text="{Binding Title}" FontSize="20" TextColor="{Binding Textcolor}" VerticalOptions="Start" />
+                    <HorizontalStackLayout Spacing="30">
+                        <HorizontalStackLayout VerticalOptions="Start">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle1i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle2i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                        </Grid>
+                        </HorizontalStackLayout>
+                         <Label Text="May 21"  VerticalOptions="End"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
             </Border>
 
             <Border StrokeShape="RoundRectangle 20" Grid.Row="0" Grid.Column="1">
-                <HorizontalStackLayout Background="#CBD87E">
+                <HorizontalStackLayout Spacing="40" Padding="10" Background="#CBD87E">
+                    <Label Text="{Binding Title}" FontSize="20" TextColor="{Binding Textcolor}" VerticalOptions="Start"/>
+                    <HorizontalStackLayout Spacing="30">
+                        <HorizontalStackLayout VerticalOptions="Start">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle1i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle2i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle3i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle4i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle4i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle4i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                        </Grid>
+                        </HorizontalStackLayout>
+                         <Label Text="May 21"  VerticalOptions="End"/>
+                    </HorizontalStackLayout>
                 </HorizontalStackLayout>
             </Border>
 
             <Border StrokeShape="RoundRectangle 20" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
-                <HorizontalStackLayout Background="#F9CD62">
-                </HorizontalStackLayout>
+                <VerticalStackLayout Spacing="40" Padding="10" Background="#F9CD62">
+                    <Label Text="{Binding Title}" FontSize="20" TextColor="{Binding Textcolor}" VerticalOptions="Start"/>
+                    <HorizontalStackLayout Spacing="30">
+                        <HorizontalStackLayout VerticalOptions="Start">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle1i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle2i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle3i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle4i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle5i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle6i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                        </Grid>
+                        </HorizontalStackLayout>
+                         <Label Text="May 21"  VerticalOptions="End"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
             </Border>
 
             <Border StrokeShape="RoundRectangle 20" Grid.Row="2" Grid.Column="0" Grid.RowSpan="2">
-                <HorizontalStackLayout Background="#EC5951">
-                </HorizontalStackLayout>
+                <VerticalStackLayout Spacing="40" Padding="10" Background="#EC5951">
+                    <Label Text="{Binding Title}" FontSize="20" TextColor="{Binding Textcolor}" VerticalOptions="Start"/>
+                    <HorizontalStackLayout Spacing="30">
+                        <HorizontalStackLayout VerticalOptions="Start">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle1i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle2i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle3i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle4i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle4i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle4i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                        </Grid>
+                        </HorizontalStackLayout>
+                         <Label Text="May 21"  VerticalOptions="End"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
             </Border>
 
             <Border StrokeShape="RoundRectangle 20" Grid.Row="2" Grid.Column="1">
-                <HorizontalStackLayout Background="#CBD87E">
-                </HorizontalStackLayout>
+                <VerticalStackLayout Spacing="40" Padding="10" Background="#CBD87E">
+                    <Label Text="{Binding Title}" FontSize="20" TextColor="{Binding Textcolor}" VerticalOptions="Start"/>
+                    <HorizontalStackLayout Spacing="30">
+                        <HorizontalStackLayout VerticalOptions="Start">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle1i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle2i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle3i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle4i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                        </Grid>
+                        </HorizontalStackLayout>
+                         <Label Text="May 21"  VerticalOptions="End"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
             </Border>
 
             <Border StrokeShape="RoundRectangle 20" Grid.Row="4" Grid.Column="0">
-                <HorizontalStackLayout Background="#5CC397">
-                </HorizontalStackLayout>
+                <VerticalStackLayout Spacing="40" Padding="10" Background="#5CC397">
+                    <Label Text="{Binding Title}" FontSize="20" TextColor="{Binding Textcolor}" VerticalOptions="Start"/>
+                    <HorizontalStackLayout Spacing="30">
+                        <HorizontalStackLayout VerticalOptions="Start">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle1i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle2i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                        </Grid>
+                        </HorizontalStackLayout>
+                         <Label Text="May 21"  VerticalOptions="End"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
             </Border>
 
             <Border StrokeShape="RoundRectangle 20" Grid.Row="3" Grid.Column="1" Grid.RowSpan="2">
-                <HorizontalStackLayout Background="#684CF0">
-                </HorizontalStackLayout>
+                <VerticalStackLayout Spacing="40" Padding="10" Background="#684CF0">
+                    <Label Text="{Binding Title}" FontSize="20" TextColor="{Binding Textcolor}" VerticalOptions="Start"/>
+                    <HorizontalStackLayout Spacing="30">
+                        <HorizontalStackLayout VerticalOptions="Start">
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle1i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle2i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle3i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                            <core:SfAvatarView  Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" ContentType="Custom"  ImageSource="people_circle4i.png" CornerRadius="25" HeightRequest="25" WidthRequest="25" />
+                        </Grid>
+                        </HorizontalStackLayout>
+                         <Label Text="May 21" VerticalOptions="End"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
             </Border>
         </Grid>
 
     </VerticalStackLayout>
+
+
+
 </ContentPage>
